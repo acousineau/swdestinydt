@@ -1,0 +1,10 @@
+.DiceButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .DiceButtons {
+    display: block;
+  }
+}

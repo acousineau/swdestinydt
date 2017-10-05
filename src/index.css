@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'swdestiny';
+  src:  url('/fonts/swdestiny.eot');
+  src:  url('/fonts/swdestiny.eot#iefix') format('embedded-opentype'),
+    url('/fonts/swdestiny.ttf') format('truetype'),
+    url('/fonts/swdestiny.woff') format('woff'),
+    url('/fonts/swdestiny.svg#swdestiny') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family:"STARWARS";
+  src: url("/fonts/STARWARS.eot") format("eot"),
+       url("/fonts/STARWARS.woff") format("woff"),
+       url("/fonts/STARWARS.ttf") format("truetype"),
+       url("/fonts/STARWARS.svg#STARWARS") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'swdestiny' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-blank:before {
+  content: "\e902";
+}
+.icon-discard:before {
+  content: "\e903";
+}
+.icon-disrupt:before {
+  content: "\e904";
+}
+.icon-focus:before {
+  content: "\e905";
+}
+.icon-melee:before {
+  content: "\e906";
+}
+.icon-range:before {
+  content: "\e907";
+}
+.icon-shield:before {
+  content: "\e908";
+}
+.icon-resource:before {
+  content: "\e900";
+}
+.icon-special:before {
+  content: "\e901";
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  font-family: sans-serif;
+}

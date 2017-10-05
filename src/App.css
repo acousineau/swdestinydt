@@ -1,0 +1,23 @@
+.App {
+
+}
+
+.App .row {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: 'STARWARS';
+  letter-spacing: 1px;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: 'STARWARS';
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    display: block;
+  }
+}

@@ -1,0 +1,192 @@
+.Die {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+}
+
+.Die.blue {
+  background: #2980b9;
+}
+
+.Die.gray {
+  background: #bdc3c7;
+}
+
+.Die.red {
+  background: #e74c3c;
+}
+
+.Die.yellow {
+  background: #f1c40f;
+}
+
+.Die:hover {
+  cursor: pointer;
+}
+
+.Die .circle {
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #75706B;
+  margin: auto;
+}
+
+.Die .cost {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: gold;
+  height: 19px;
+  width: 22px;
+}
+
+.Die .cost .amount {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 12px;
+}
+
+.Die .cost i {
+  position: absolute;
+  top: 3px;
+  left: 11px;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.Die .cost:before {
+  content: '';
+  height: 0px;
+  width: 0px;
+  display: inline-block;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid gold;
+  transform: rotate(0deg) translate(-30px, 0px);
+}
+
+.Die .cost:after {
+  content: '';
+  height: 0px;
+  width: 0px;
+  display: inline-block;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid gold;
+  transform: rotate(0deg) translate(3px, -47px);
+}
+
+.Die .symbol {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+  background: black;
+  width: 30px;
+  height: 40px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2px;
+}
+
+.Die .symbol:after {
+  position: relative;
+  z-index: 0;
+  content: '';
+  height: 0;
+  width: 0;
+  display: inline-block;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 35px solid black;
+  transform: rotate(0deg) translate(0px, -65px);
+}
+
+.Die .symbol:before {
+  position: relative;
+  z-index: 0;
+  content: '';
+  height: 0;
+  width: 0;
+  display: inline-block;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 35px solid black;
+  transform: rotate(0deg) translate(0px, -35px);
+}
+
+.Die .symbol.red {
+  background: red;
+}
+.Die .symbol.red:before {
+  border-right: 35px solid red;
+}
+.Die .symbol.red:after {
+  border-right: 35px solid red;
+}
+
+.Die .symbol.modified {
+  background: blue;
+}
+.Die .symbol.modified:before {
+  border-right: 35px solid blue;
+}
+.Die .symbol.modified:after {
+  border-right: 35px solid blue;
+}
+.modifier {
+  position: absolute;
+  right: 11px;
+}
+
+.Die .symbol i {
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  right: 9px;
+  z-index: 1;
+}
+
+.Die .symbol i.zero {
+  top: 13px;
+}
+
+.Die .symbol .value {
+  font-size: 16px;
+  position: absolute;
+  right: 12px;
+  top: -2px;
+  z-index: 1;
+}
+
+.Die .symbol .value.modified-value {
+  right: 6px;
+}
+
+.Die .symbol .value.no-symbol {
+  top: 10px;
+}
+
+.Die .hot-key {
+  position: absolute;
+  font-size: 11px;
+  color: white;
+  top: 4px;
+  background: black;
+  width: 15px;
+  height: 15px;
+  text-shadow: 1px 0px 0px darkgrey;
+}
+
+@media (max-width: 800px) {
+  .Die {
+    transform: scale(-3px);
+  }
+}

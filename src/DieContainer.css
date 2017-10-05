@@ -1,0 +1,15 @@
+@media (max-width: 800px) {
+  .DieContainer {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .DieContainer .Count {
+    position: absolute;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
